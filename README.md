@@ -28,6 +28,7 @@ packages/  shared code (planned)
 
 ```bash
 pnpm install
+pnpm dev       # web + api together
 pnpm dev:web   # http://localhost:5173
 pnpm dev:api   # http://localhost:3000
 ```

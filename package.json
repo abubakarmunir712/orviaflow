@@ -3,8 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "pnpm --parallel --filter web --filter api dev",
     "dev:web": "pnpm --filter web dev",
-    "dev:api": "pnpm --filter api start:dev",
+    "dev:api": "pnpm --filter api dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
