@@ -28,6 +28,12 @@ export default defineConfig([
     languageOptions: { globals: globals.browser },
   },
 
+  // shadcn/ui components export style variants (e.g. buttonVariants) alongside components
+  {
+    files: ['apps/web/src/components/ui/**/*.tsx'],
+    rules: { 'react-refresh/only-export-components': 'off' },
+  },
+
   // Backend: Node
   {
     files: ['apps/api/**/*.ts'],
